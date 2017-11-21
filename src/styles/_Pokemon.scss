@@ -1,0 +1,8 @@
+.Pokemon {
+    background-color: rgb(55, 145, 55);
+    height: calc(100vh - 170px);
+    @include flexo;
+    font-size: 1.7rem;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
