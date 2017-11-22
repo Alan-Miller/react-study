@@ -19,7 +19,7 @@ module.exports = (app) => {
     });
 
     app.get('/api/pokemon', (req, res) => {
-        axios.get('http://pokeapi.co/api/v2/pokemon').then(pokemon => {
+        axios.get('https://pokeapi.co/api/v2/pokemon').then(pokemon => {
             console.log(pokemon.data.results)
             res.status(200).send(pokemon.data.results);
         });
