@@ -1,0 +1,8 @@
+.Button {
+    @include flexo;
+    width: 200px;
+    height: 70px;
+    background-color: red;
+    border-radius: 10px;
+    cursor: pointer;
+}

@@ -11,6 +11,7 @@ function Header(props) {
                 <Link to="/data"><div>Data</div></Link>
                 <Link to="/db"><div>DB</div></Link>
                 <Link to="/test"><div>Test</div></Link>
+                <Link to="/bubble"><div>Bubble</div></Link>
                 <Link to="/starwars"><div>StarWars</div></Link>
                 <Link to="/pokemon"><div>Pokemon</div></Link>
             </div>
