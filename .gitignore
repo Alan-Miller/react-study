@@ -27,5 +27,6 @@ config.js
 
 # SASS 
 src/**/*.css
+dev-notes.md
 
 *nodemon.json
