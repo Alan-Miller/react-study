@@ -24,7 +24,10 @@ export default class Bubble extends React.Component {
                         onClick={e => { e.stopPropagation(); console.log('MODAL'); }}
                     >{
                         this.state.showModal ?
-                        <span className="x" onClick={() => this.setState({ showModal: false })}>x</span>
+                        <div>
+                            <span className="x" onClick={() => this.setState({ showModal: false })}>x</span>
+                            <span className="info">Dark gray box has onClick event to close modal. Button and modal are both inside gray box, so clicking them would propagate a click event back to gray box, closing modal. Instead, button and modal invoke stopPropagation method to prevent propagation to the outer box (i.e., clicking them does not close modal). Clicking outside modal (or on 'x') will close modal.</span>
+                        </div>
                         : null
                     }</div>
                     <Button

@@ -4,10 +4,11 @@
     background-color: $modal;
     border-radius: 10px;
     cursor: pointer;
-    padding: 10px 20px;
+    padding: 7px 12px;
     border: medium solid $modal;
     transition: .2s;
     color: #222;
+    font-size: 1.5rem;
     &:hover {
         background-color: gainsboro;
         color: $modal;

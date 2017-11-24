@@ -18,10 +18,15 @@
         width: 55%;
         height: 55%;
         transition: .2s;
+        padding: 10px;
+        @include flexo;
         &.showModal {
             border: thick solid $modal;
             background-color: $modal;
             cursor: pointer;
+        }
+        .info {
+            font-size: 1rem;
         }
         .x {
             color: #333;
