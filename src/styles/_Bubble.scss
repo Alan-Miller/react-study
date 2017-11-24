@@ -1,6 +1,43 @@
 .Bubble {
-    background-color: rgb(55, 145, 55);
+    background-color: gainsboro;
     height: calc(100vh - 170px);
     @include flexo;
     font-size: 2rem;
+
+    .outerBox {
+        background-color: #333;
+        width: 80%;
+        height: 80%;
+        @include flexo($fd: column);
+    }
+
+    .modal {
+        // background-color: green;
+        position: relative;
+        border: thick dashed $modal;
+        width: 55%;
+        height: 55%;
+        transition: .2s;
+        &.showModal {
+            border: thick solid $modal;
+            background-color: $modal;
+            cursor: pointer;
+        }
+        .x {
+            color: #333;
+            position: absolute;
+            top: 0;
+            right: 0;
+            padding: 10px;
+            margin: 0px 10px;
+            transition: .2s;
+            &:hover {
+                color: gainsboro;
+            }
+        }
+    }
+
+    .Button {
+        margin-top: 50px;
+    }
 }

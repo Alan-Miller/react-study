@@ -3,7 +3,7 @@
     width: 100vw;
     height: 170px;
     background-color: #222;
-    color: whitesmoke;
+    color: gainsboro;
     @include flexo;
     h1 {
         font-size: 3rem;
@@ -17,12 +17,12 @@
             font-size: 1.4rem;
             margin: 5px 15px 5px 5px;
             cursor: pointer;
-            color: whitesmoke;
+            color: gainsboro;
         }
     }
     .location {
         position: absolute;
-        bottom: 0;
+        top: 0;
         right: 0;
         font-size: 1.4rem;
         margin: 5px 15px 5px 5px;

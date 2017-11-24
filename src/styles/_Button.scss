@@ -1,8 +1,15 @@
 .Button {
     @include flexo;
-    width: 200px;
     height: 70px;
-    background-color: red;
+    background-color: $modal;
     border-radius: 10px;
     cursor: pointer;
+    padding: 10px 20px;
+    border: medium solid $modal;
+    transition: .2s;
+    color: #222;
+    &:hover {
+        background-color: gainsboro;
+        color: $modal;
+    }
 }
